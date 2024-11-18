@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= car.make%></title>
+  </head>
+  <body>
+    <h1><%=car.make%></h1>
+    <p>Model: <%= car.model%></p>
+    <p>Year: <%= car.year%></p>
+    <p>Color: <%= car.color%></p>
+    <a href="/carsPage">Cars collection</a>
+    <a href="/cars/<%= car._id %>/edit">Edit Car</a>
+    <form action="/cars/<%= car._id %>?_method=DELETE" method="post">
+      <button type="submit">Remove car</button>
+    </form>
+  </body>
+</html>

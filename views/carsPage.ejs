@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars Collection</title>
+  </head>
+  <body>
+    <h1>Availaible Cars</h1>
+    <ul>
+      <% carsCollection.forEach(car => { %>
+      <li>
+        <a href="/carsPage/<%= car._id %>"><%=car.make %> <%=car.model %></a>
+      </li>
+      <% }); %>
+    </ul>
+    <a href="/add/new">Add Car</a>
+  </body>
+</html>

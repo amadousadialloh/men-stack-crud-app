@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add car</title>
+  </head>
+  <body>
+    <h1>Add your favorite car</h1>
+    <form action="/cars" method="post">
+      <p>
+        <label for="make">Make</label>
+        <input type="text" name="make" />
+      </p>
+      <p>
+        <label for="model">Model</label>
+        <input type="text" name="model" />
+      </p>
+      <p>
+        <label for="year">Year</label>
+        <input type="number" name="year" />
+      </p>
+      <p>
+        <label for="color">color</label>
+        <input type="text" name="color" />
+      </p>
+      <button type="submit">ADD</button>
+    </form>
+    <a href="/carsPage">Back to cars collection</a>
+  </body>
+</html>
